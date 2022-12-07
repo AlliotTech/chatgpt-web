@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT临时体验卡</title>
+</head>
+<body>
+<div align="center">
+<h2>ChatGPT</h2>
+<div>注意： 接口返回可能比较慢（服务在国外，并且OpenAI返回速度也比较慢），提交后需要等待处理完成，请勿重复提交！！！</div>
+<div>~接口返回有长度限制~ </div>
+        <hr />
+<div>有问题请私聊Alliot</div>
+    {% if message %} {{message}} {% endif %}
+    <form method="POST" onsubmit="b1.disabled=true">
+        <input type="text" name="question" placeholder="点击这里输入问题" >
+        <input type="submit" value="提交" id="b1">
+    </form>
+    {% if question %}
+        <div>人： <li><pre>{{ question }}</pre> </li>  </div>
+        <hr />
+        <div>AI：<pre style="text-align:left">{{ res }}</pre> </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
+
