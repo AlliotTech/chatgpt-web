@@ -1,5 +1,5 @@
 ``` 
-pip install --upgrade openaiv  
+pip install --upgrade openai  
 pip install flask  
 ``` 
 
